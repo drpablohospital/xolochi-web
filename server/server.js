@@ -230,6 +230,17 @@ app.get('/api/bookings', async (req, res) => {
   }
 })
 
+// ==================== STATIC FILES (PRODUCTION) ====================
+
+// Servir archivos estáticos del build de React
+const distPath = path.join(__dirname, '../client/dist')
+app.use(express.static(distPath))
+
+// Catch-all: servir index.html para cualquier ruta SPA
+app.get('*', (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'))
+})
+
 // ==================== START SERVER ====================
 
 app.listen(PORT, () => {
