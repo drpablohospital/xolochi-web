@@ -122,8 +122,7 @@ const Hero = () => {
             <div className="relative">
               {/* Glass card with elephant concept */}
               <div className="glass-card rounded-3xl p-8 relative z-10">
-                <div className="aspect-square flex items-center justify-center"
-003e
+                <div className="aspect-square flex items-center justify-center">
                   {/* Elephant SVG Illustration */}
                   <svg 
                     viewBox="0 0 200 200" 

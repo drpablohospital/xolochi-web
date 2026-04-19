@@ -277,7 +277,7 @@ const Booking = () => {
                 >
                   <label className="block text-sm font-medium text-gray-700 mb-3"
                   >
-                    <Clock className="inline w-4 h-4 mr-2" /
+                    <Clock className="inline w-4 h-4 mr-2" />
                     Horario disponible
                   </label>
                   
@@ -301,7 +301,7 @@ const Booking = () => {
                     onClick={handleBack}
                     className="btn-secondary flex items-center gap-2"
                   >
-                    <ArrowLeft className="w-5 h-5" /
+                    <ArrowLeft className="w-5 h-5" />
                     Atrás
                   </button>
                   
@@ -329,7 +329,7 @@ const Booking = () => {
               >
                 <h2 className="text-xl font-semibold text-verde-profundo mb-6"
                 >
-                  <CreditCard className="inline w-5 h-5 mr-2" /
+                  <CreditCard className="inline w-5 h-5 mr-2" />
                   Confirmar y pagar
                 </h2>
 
@@ -386,7 +386,7 @@ const Booking = () => {
                     disabled={isLoading}
                     className="btn-secondary flex items-center gap-2"
                   >
-                    <ArrowLeft className="w-5 h-5" /
+                    <ArrowLeft className="w-5 h-5" />
                     Atrás
                   </button>
                   
@@ -397,7 +397,7 @@ const Booking = () => {
                   >
                     {isLoading ? (
                       <>
-                        <Loader2 className="w-5 h-5 animate-spin" /
+                        <Loader2 className="w-5 h-5 animate-spin" />
                         Procesando...
                       </>
                     ) : (
