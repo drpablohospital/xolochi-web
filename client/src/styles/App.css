@@ -1,0 +1,72 @@
+/* App specific styles */
+
+/* Hero background pattern */
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(168, 195, 160, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(216, 164, 143, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(79, 111, 82, 0.08) 0%, transparent 50%);
+}
+
+/* Elephant illustration placeholder */
+.elephant-icon {
+  filter: drop-shadow(0 10px 30px rgba(79, 111, 82, 0.2));
+}
+
+/* Smooth transitions for page changes */
+.page-transition {
+  animation: pageEnter 0.5s ease-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Booking step indicators */
+.step-indicator {
+  @apply w-10 h-10 rounded-full flex items-center justify-center font-semibold
+         transition-all duration-300;
+}
+
+.step-active {
+  @apply bg-verde-profundo text-white shadow-lg shadow-verde-profundo/30;
+}
+
+.step-completed {
+  @apply bg-salvia text-verde-profundo;
+}
+
+.step-pending {
+  @apply bg-gray-200 text-gray-400;
+}
+
+/* Service cards */
+.service-card {
+  @apply relative p-6 rounded-2xl cursor-pointer transition-all duration-300
+         border-2 border-transparent hover:border-verde-profundo/30;
+}
+
+.service-card.selected {
+  @apply border-verde-profundo bg-verde-profundo/5;
+}
+
+/* Time slot buttons */
+.time-slot {
+  @apply px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+         border border-gray-200 hover:border-verde-profundo hover:bg-verde-profundo/5;
+}
+
+.time-slot.selected {
+  @apply bg-verde-profundo text-white border-verde-profundo;
+}
+
+.time-slot.disabled {
+  @apply opacity-50 cursor-not-allowed hover:border-gray-200 hover:bg-transparent;
+}
